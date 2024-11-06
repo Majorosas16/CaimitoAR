@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <title>&lt;model-viewer&gt; template</title>
+    <meta charset="utf-8">
+    <meta name="description" content="&lt;model-viewer&gt; template">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link type="text/css" href="./styles.css" rel="stylesheet"/>
+  </head>
+  <body>
+    <!-- <model-viewer> HTML element -->
+    <model-viewer src="model.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls tone-mapping="neutral" poster="poster.webp" shadow-intensity="1.33" shadow-softness="0.96" camera-orbit="-37.45deg 74.62deg 20.95m" field-of-view="29.72deg">
+      <button class="Hotspot" slot="hotspot-1" data-position="-3.1230006352420325m 0.5885283493759679m 2.737157573719152m" data-normal="-0.6564616558486838m 0.11056414153913922m 0.7462128818280462m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">El caimito es el fruto de un árbol tropical originario de Centroamérica y el Caribe</div>
+      </button><button class="Hotspot" slot="hotspot-2" data-position="2.969937291652866m 2.6510775575377927m 1.550159005206968m" data-normal="0.6427868466366606m 0.5885312264602917m 0.4903631973058776m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">El caimito tiene un sabor similar al mangostino, con un toque a uva y una textura cremosa</div>
+      </button><button class="Hotspot" slot="hotspot-3" data-position="-0.8818851753888524m 3.9718997547569788m 1.515788724745974m" data-normal="-0.17767570010159783m 0.8684681434034458m 0.4628114405314316m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">Es una importante fuente de calcio, fósforo, vitamina A y vitamina C</div>
+      </button><button class="Hotspot" slot="hotspot-4" data-position="-3.5692814782131013m 2.6387383458078606m -1.6075948101252902m" data-normal="-0.7478881447079542m 0.5963729404669487m -0.29155212035603445m" data-visibility-attribute="visible">
+          <div class="HotspotAnnotation">El caimito se puede propagar por semilla, estaca e injerto</div>
+      </button>
+      <div class="progress-bar hide" slot="progress-bar">
+          <div class="update-bar"></div>
+      </div>
+      <button slot="ar-button" id="ar-button">
+          View in your space
+      </button>
+      <div id="ar-prompt">
+          <img src="ar_hand_prompt.png">
+      </div>
+    </model-viewer>  
+    <script src="script.js"></script>
+    <!-- Loads <model-viewer> for browsers: -->
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+  </body>
+</html>
